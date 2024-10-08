@@ -51,7 +51,7 @@ class Cache extends MusicBeatState
 		menuBG.screenCenter();
 		add(menuBG);
 
-		shitz = new FlxText(12, 12, 0, "The Engine Is Loading", 12);
+		shitz = new FlxText(12, 12, 0, "The Mod Is Loading", 12);
 		shitz.scrollFactor.set();
 		shitz.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(shitz);
@@ -99,7 +99,7 @@ class Cache extends MusicBeatState
 		for (i in images)
 		{
 			var replaced = i.replace("Well.png","");
-			var data:BitmapData = BitmapData.fromFile("assets/preload/images" + i);
+			var data:BitmapData = BitmapData.fromFile("assets/shared/images" + i);
 			var graph = FlxGraphic.fromBitmapData(data);
 			graph.persist = true;
 			graph.destroyOnNoUse = false;
