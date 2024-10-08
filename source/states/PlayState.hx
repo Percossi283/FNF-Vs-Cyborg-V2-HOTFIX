@@ -73,16 +73,16 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['You Suck!', 0.2], //From 0% to 19%
-		['Shit', 0.4], //From 20% to 39%
-		['Bad', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
-		['Meh', 0.69], //From 60% to 68%
-		['Nice', 0.7], //69%
-		['Good', 0.8], //From 70% to 79%
-		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['DUMBASS!', 0.2], //From 0% to 19%
+		['PORNED!!!', 0.4], //From 20% to 39%
+		['WHAT????', 0.5], //From 40% to 49%
+		['STOP LOSING', 0.6], //From 50% to 59%
+		['Uh', 0.69], //From 60% to 68%
+		['Cool', 0.7], //69%
+		['Great', 0.8], //From 70% to 79%
+		['Great Bud', 0.9], //From 80% to 89%
+		['Fantastic!', 1], //From 90% to 99%
+		['WOMBO COMBO!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 
 	//event variables
@@ -541,7 +541,7 @@ class PlayState extends MusicBeatState
 		updateScore(false);
 		uiGroup.add(scoreTxt);
 
-		botplayTxt = new FlxText(400, healthBar.y - 90, FlxG.width - 800, Language.getPhrase("Botplay").toUpperCase(), 32);
+		botplayTxt = new FlxText(400, healthBar.y - 90, FlxG.width - 800, Language.getPhrase("YOU FUCKIN CHEATER").toUpperCase(), 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
@@ -2484,7 +2484,7 @@ class PlayState extends MusicBeatState
 	public var totalPlayed:Int = 0;
 	public var totalNotesHit:Float = 0.0;
 
-	public var showCombo:Bool = false;
+	public var showCombo:Bool = true;
 	public var showComboNum:Bool = true;
 	public var showRating:Bool = true;
 
